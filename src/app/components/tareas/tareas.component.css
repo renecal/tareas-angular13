@@ -7,3 +7,6 @@ input{
 .cursor{
   cursor: pointer;
 }
+.fa-trash-alt{
+  color: red;
+}
