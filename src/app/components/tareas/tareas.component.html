@@ -4,7 +4,15 @@
       <input type="text" [(ngModel)]="nombreTarea" (keyup.enter)="agregarTarea()"  class="form-control form-control-lg" placeholder="Ingrese la tarea...">
     </div>
     <div class="col-lg-6 offset-lg-3 mt-3 text-center">
-      <h6 class="card p-2">No hay tareas para mostrar.</h6>
+      <div *ngIf="listaTareas.length === 0" class="card p-2">
+        <h6 class="">No hay tareas para mostrar.</h6>
+      </div>
+      <ul class="list-group">
+        <li *ngFor="let tarea of listaTareas" class="list-group-item m-1">
+          {{tarea.nombre}}
+        </li>
+      </ul>
     </div>
+
   </div>
 </div>
