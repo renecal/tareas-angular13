@@ -17,7 +17,14 @@ export class TareasComponent implements OnInit {
     // crear un objeto tarea
     // agregamos el objeto tarea al array
     // resetear el form o el input
-    console.log(this.nombreTarea)
+    // console.log(this.nombreTarea)
+    const tarea: Tarea = {
+      nombre: this.nombreTarea,
+      estado: false,
+    }
+    this.listaTareas.push(tarea);
+
+    this.nombreTarea = '';
   }
 
   ngOnInit(): void {
