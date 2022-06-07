@@ -32,6 +32,11 @@ export class TareasComponent implements OnInit {
     this.listaTareas.splice(index,1);
   }
 
+  actualizarTarea(tarea:Tarea, index:number):void{
+    this.listaTareas[index].estado = !tarea.estado;
+    console.log(tarea.estado)
+  }
+
   ngOnInit(): void {
   }
 
