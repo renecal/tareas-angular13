@@ -9,15 +9,10 @@ import { Tarea } from 'src/app/models/Tarea';
 export class TareasComponent implements OnInit {
   listaTareas: Tarea[] = [];
   nombreTarea = '';
-
-
   constructor() { }
-
   agregarTarea(){
-    // crear un objeto tarea
-    // agregamos el objeto tarea al array
-    // resetear el form o el input
-    // console.log(this.nombreTarea)
+    // crear un objeto tarea  // agregamos el objeto tarea al array // resetear el form o el input
+
     const tarea: Tarea = {
       nombre: this.nombreTarea,
       estado: false,
